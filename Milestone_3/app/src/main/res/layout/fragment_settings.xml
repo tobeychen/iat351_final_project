@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iat351.milestone_3.fragment.SettingsFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:alpha="0.2"
+        android:src="@mipmap/set_icon"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="66dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Calendar"
+            android:background="@drawable/button_yellow"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Event Categories"
+            android:id="@+id/setting_categories"
+            android:onClick="SettingCategories"
+            android:background="@drawable/button_yellow"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Goals"
+            android:background="@drawable/button_yellow"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Summary"
+            android:background="@drawable/button_yellow"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

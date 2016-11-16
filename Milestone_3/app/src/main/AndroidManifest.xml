@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="iat351.milestone_3">
+
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/CalendarAppTheme">
+
+    <activity
+        android:name=".activity.LoadingActivity"
+        android:label="@string/app_name"
+        android:theme="@style/CalendarAppTheme.noActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".activity.MainActivity"
+        android:label="main_screens"
+        android:theme="@style/CalendarAppTheme.noActionBar">
+    </activity>
+
+    <activity
+        android:name=".activity.AfterAddedEventMainActivity"
+        android:label="main_screens"
+        android:theme="@style/CalendarAppTheme.noActionBar">
+    </activity>
+
+    <activity
+        android:name=".activity.CreateEventActivity"
+        android:label="add event"
+        android:theme="@style/CalendarAppTheme.noActionBar"/>
+
+    <activity
+        android:name=".activity.ReviewAddEventActivity"
+        android:label="add event"
+        android:theme="@style/CalendarAppTheme.noActionBar"/>
+
+    <activity
+        android:name=".activity.CreateGoalActivity"
+        android:label="add event"
+        android:theme="@style/CalendarAppTheme.noActionBar"/>
+
+    <activity
+        android:name=".activity.FinshGoalItemActivity"
+        android:label="finish goal item"
+        android:theme="@style/CalendarAppTheme.noActionBar"/>
+
+
+</application>
+
+</manifest>

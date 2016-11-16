@@ -1,0 +1,275 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iat351.milestone_3.fragment.SummaryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/sum_type_spinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:prompt="@string/summary_type_promote"
+            android:backgroundTint="@color/gray"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/sum_today_date"
+            android:text="123"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/summary_image"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="42dp"
+            android:paddingTop="48dp"
+            android:paddingRight="48dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/yellow" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Playing" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/green" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Running" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/red" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Eating" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/black" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Studying" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/light_blue" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Reading" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/light_brown" />
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textSize="12sp"
+                        android:text="Sleeping" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
